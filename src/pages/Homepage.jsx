@@ -2,6 +2,7 @@ import About from "../components/About"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Features from "../components/Features";
+import Story from "../components/Story";
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
         <Hero/>
         <About/>
         <Features/>
+        <Story/>
     </main>
   )
 }

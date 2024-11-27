@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
@@ -10,7 +11,7 @@ const BentoCard = ( {src , title , description, isComingSoon } ) => {
 
     const handleMouseMove = (e) => {
         if(!hoverButtonRef.current) return;
-        const rect = hoverButtonRef.current.getBoundingClientRect()
+        const rect = hoverButtonRef.current.getBoundingClientRect();
 
         setCursorPosition({
             x: e.clientX - rect.left,
