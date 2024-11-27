@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import AnimatedTitle from "./AnimatedTitle";
 
 const ImageClipBox = ({ src, clipClass})=>(

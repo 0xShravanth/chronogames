@@ -17,6 +17,7 @@ function Homepage() {
         <Story/>
         <Contact/>
         <Footer/>
+        
     </main>
   )
 }
