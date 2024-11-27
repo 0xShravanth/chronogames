@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import gsap from 'gsap';
 import Button from './Button';
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "contact"] 
+const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"] 
 
 const Navbar = () => {
     // State for toggling audio and visual indicator

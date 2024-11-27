@@ -1,6 +1,7 @@
 import About from "../components/About"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
+import Features from "../components/Features";
 
 function Homepage() {
   return (
@@ -9,6 +10,7 @@ function Homepage() {
         <Navbar/>
         <Hero/>
         <About/>
+        <Features/>
     </main>
   )
 }

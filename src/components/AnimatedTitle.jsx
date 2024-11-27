@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import clsx from "clsx";
 import{ gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect , useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
+
 
 const AnimatedTitle = ( { title , containerClass } ) => {
     const containerRef = useRef(null);
