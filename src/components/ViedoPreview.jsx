@@ -64,14 +64,14 @@ export const VideoPreview = ({ children }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className="absolute z-50 size-full overflow-hidden rounded-lg"
+      className="absolute z-50 size-full overflow-hidden border-black rounded-lg"
       style={{
         perspective: "500px",
       }}
     >
       <div
         ref={contentRef}
-        className="origin-center rounded-lg"
+        className="origin-center border-black rounded-xl"
         style={{
           transformStyle: "preserve-3d",
         }}

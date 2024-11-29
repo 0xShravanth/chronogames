@@ -125,7 +125,7 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
             <ViedoPreview>
             <div
               onClick={handleMiniVdClicked}
-              className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:opacity-100  "
+              className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:opacity-100 hover:opacity-200"
             >
               <video
                 ref={nextVideodRef}
@@ -133,7 +133,7 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
                 loop
                 muted
                 id="current-video"
-                className="size-64 origin-center scale-150  object-cover object-center"
+                className="size-64 origin-center rounded-2xl  scale-150  object-cover object-center"
                 onLoadedData={handleViedoLoad}
               />
             </div>
@@ -146,7 +146,7 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
             loop
             muted
             id="next-video"
-            className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
+            className="absolute-center invisible absolute z-20 size-64  object-cover object-center"
             onLoadedData={handleViedoLoad}
           />
           {/* adding zoom in effect using another viedo player */}
@@ -157,7 +157,7 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
             autoPlay
             loop
             muted
-            className="absolute left-0 top-0 size-full object-cover object-center"
+            className="absolute left-0 top-0 size-full  object-cover object-center"
             onLoadedData={handleViedoLoad}
           />
         </div>
