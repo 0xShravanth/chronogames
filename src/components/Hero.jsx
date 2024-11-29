@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
 import Button from "./Button";
+import ViedoPreview from "./ViedoPreview";
 
 {/* enabling scroll trigger plugin*/}
 
@@ -121,9 +122,10 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
         <div>
           {/* adding mini viedo */}
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
+            <ViedoPreview>
             <div
               onClick={handleMiniVdClicked}
-              className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:opacity-100 "
+              className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:opacity-100  "
             >
               <video
                 ref={nextVideodRef}
@@ -135,6 +137,7 @@ const upCommingViedoIndex = (currentIndex % totalViedos) + 1;
                 onLoadedData={handleViedoLoad}
               />
             </div>
+            </ViedoPreview>
           </div>
 
           <video
